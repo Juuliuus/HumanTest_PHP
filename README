@@ -1,0 +1,15 @@
+Human Test in PHP
+
+A new (at least to me) type of "Human Test" used to authenticate that the person posting anonymously is human and not a bot.
+
+It consists of a 5x5 grid. The server generates 5 random coordinates in the html page, the user needs to click these in the order indicated, and the result is then checked on the server that it matches what was sent down.
+
+The working usage can be found at: https://www.pagantoday.net/forumAdd.php
+(This version is now (2014-09-14) not used at above website, an alternate version is in place there, and I have an idea for more improvement of that one...)
+
+I know that it (is/can be) susceptible to hacking and am looking for comments or suggestions for improvement (if that is even possible given that HTML is completely transparent). I'm not a hacker and I don't know how easy this is to read, analyze, crack and abuse.
+
+I also thought that this code could be useful for somebody in some way perhaps, if nothing else it's debugged :)
+
+The included php is a sanitized version that will work with minimal fuss (except for DB field posting names, the fact that I use TinyMce, and that I use the mootools javascript framework, but that should be quite easy to edit to your own flavour). I hope there are no seriously idiotic code flaws in here, I work in PHP about once a year...but it is a working version, that I know. 
+
